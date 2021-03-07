@@ -1,0 +1,164 @@
+@media screen and (max-width: 900px) {
+    .navbar {
+        columns: 1;
+        flex-wrap: wrap-reverse;
+    }
+
+    .site_title {
+
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .button,
+    .search_container {
+        display: none;
+    }
+
+    .ham_label {
+        display: block;
+    }
+
+    .site_title {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .site_title {
+
+        font-size: 30px;
+    }
+}
+
+
+/* @media (max-width: 500px) {
+
+    .site_title {
+        font-size: x-small;
+    }
+
+} */
+
+.ham_button,
+label {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.ham_button:checked~.search_container {
+    display: contents;
+}
+
+body {
+    background-color: rgb(184, 185, 187);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo {
+    background-image: url(../images/GameHub_Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin: 10px;
+}
+
+.btnContainer {
+    display: inline;
+    flex-direction: row;
+    float: right;
+    font-size: 18px;
+    text-align: right;
+}
+
+.txt_input,
+.button {
+    background-color: #fff;
+    border: none;
+    /* border-radius: 15px; */
+    box-shadow: 2px 5px 5px #3890c7;
+    color: #1b203d;
+    cursor: pointer;
+    height: 30px;
+}
+
+main,
+.box {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-container img:hover {
+    transform: scale(1.1);
+}
+
+.product-container img {
+    cursor: pointer;
+    flex: 1;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.box {
+    align-items: center;
+    background-color: #1b203d;
+    /* border-radius: 10px; */
+    box-shadow: 2px 10px 5px #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.txt_input {
+    cursor: text;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.site_title {
+    /* overflow: hidden; */
+    white-space: nowrap;
+
+}
+
+
+#add-to-cart,
+.cart {
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.cart {
+    border: 1px solid green;
+    position: fixed;
+    right: 10px;
+    padding: 10px;
+}
+
+#add-to-cart:checked~.cart {
+    display: block;
+}
