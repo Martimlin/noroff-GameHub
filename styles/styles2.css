@@ -30,8 +30,6 @@ header {
 }
 
 .grid-container {
-
-    max-width: 1200px;
     display: grid;
     justify-content: center;
     grid-template-areas:
@@ -101,8 +99,6 @@ header {
     }
 
     .grid-container {
-
-        max-width: 1200px;
         display: grid;
         justify-content: center;
         grid-template-areas:
@@ -166,6 +162,8 @@ main,
 }
 
 .product-container {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-flow: row wrap;
     flex-wrap: wrap;
