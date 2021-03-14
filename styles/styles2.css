@@ -57,7 +57,7 @@ h1 {
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:690px) {
 
     .grid-container {
         max-width: 1200px;
@@ -205,6 +205,7 @@ label:hover {
 }
 
 .menu {
+    display: none;
     background: #1b203d;
     position: absolute;
     right: 0px;
@@ -212,7 +213,6 @@ label:hover {
     border-style: 1px;
     text-align: left;
     width: 136px;
-    display: none;
 }
 
 input[type=checkbox].hamMeny:checked~.menu {
