@@ -1,10 +1,23 @@
-.navbar {
-  position: -webkit-sticky;
-  position: sticky !important;
-  grid-area: navbar;
-  align-items: center;
-  top: 0;
-  z-index: 999;
+@font-face {
+  font-family: sfnewrepublic;
+  src: url('/fonts/sfoldrepublicsc-italic.ttf');
+}
+
+header {
+  grid-area: header;
+}
+
+.logo {
+  background-image: url(../images/GameHub_Logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  margin: 10px;
+}
+
+main {
+  grid-area: main;
 }
 
 .sideMenu {
@@ -22,18 +35,6 @@ footer {
   grid-area: footer;
 }
 
-main {
-  grid-area: main;
-}
-
-header {
-  grid-area: header;
-}
-
-h1 {
-  margin: 0px;
-}
-
 .grid-container {
   display: grid;
   justify-content: center;
@@ -46,25 +47,28 @@ h1 {
   padding: 10px;
 }
 
+.navbar h1 {
+  margin: 0px;
+}
 
+main h2 {
+  font-family: sfnewrepublic, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: #1b203d;
+  padding: 10px;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky !important;
+  grid-area: navbar;
+  align-items: center;
+  top: 0;
+  z-index: 999;
+}
 
 .hamburgerbars {
   display: none;
-}
-
-body {
-  background-color: rgb(184, 185, 187);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* text-align: center; */
-}
-
-.logo {
-  background-image: url(../images/GameHub_Logo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 200px;
-  margin: 10px;
 }
 
 .btnContainer {
@@ -73,6 +77,11 @@ body {
   float: right;
   font-size: 18px;
   text-align: right;
+}
+
+body {
+  background-color: rgb(184, 185, 187);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .txt_input,
@@ -93,13 +102,9 @@ body {
 .product-container {
   display: flex;
   flex-flow: wrap;
-  /* align-content: stretch; */
   justify-content: center;
-  /* width: 100%; */
   max-width: 1200px;
   padding-top: 10px;
-
-  /* flex-basis: 33%; */
 }
 
 .product-container img:hover {
@@ -110,13 +115,8 @@ body {
   display: block;
   object-fit: cover;
   width: 20%;
-
-
-  /* set to 'auto' in IE11 to avoid distortions */
   cursor: pointer;
   margin: 10px;
-
-
 }
 
 .box {
@@ -131,9 +131,6 @@ body {
   padding: 10px;
   padding: 20px;
 }
-/* .search-container {
-  float: left;
-} */
 
 .txt_input {
   cursor: text;
@@ -146,41 +143,12 @@ body {
   white-space: nowrap;
 }
 
-#add-to-cart,
-.cart {
-  display: none;
-}
-
 label:hover {
   cursor: pointer;
 }
 
-.cart {
-  border: 1px solid green;
-  position: fixed;
-  right: 10px;
-  padding: 10px;
-}
-
-#add-to-cart:checked~.cart {
-  display: block;
-}
-
 hr {
   color: #fff;
-}
-
-.menu {
-  display: none;
-  background: #1b203d;
-  position: absolute;
-  right: 0px;
-  top: 65px;
-  border-style: 1px;
-  text-align: left;
-  width: 100%;
-
-  font-size: 1.2rem;
 }
 
 .menu li {
@@ -189,10 +157,6 @@ hr {
 
 input[type="checkbox"].hamMeny:checked~.menu {
   display: block;
-}
-
-h .fa-li {
-  cursor: pointer;
 }
 
 a {
@@ -205,9 +169,6 @@ a:hover,
   color: #3890c7;
 }
 
-.wrapper {
-  position: relative;
-}
 
 ul {
   list-style-type: none;
@@ -220,14 +181,24 @@ ul {
   position: sticky !important;
 }
 
+
+.menu {
+  display: none;
+  background: #1b203d;
+  position: absolute;
+  right: 0px;
+  top: 65px;
+  border-style: 1px;
+  text-align: left;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1100px) {
   .navbar {
-    /* columns: 1; */
     flex-wrap: wrap-reverse;
   }
 }
-
-
 
 @media screen and (min-width: 691px) and (max-width: 1000px) {
   .site_title {
