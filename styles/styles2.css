@@ -209,9 +209,9 @@ ul {
     }
   }
   
-  @media screen and (max-width: 620px) {
-   img {
-       max-width: 180px !important;
+  @media screen and (max-width: 600px) {
+   .grid-container img {
+       max-width: 200px !important;
    }
   }
   
