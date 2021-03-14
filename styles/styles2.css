@@ -45,16 +45,16 @@ h1 {
     padding: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .navbar {
         /* columns: 1; */
         flex-wrap: wrap-reverse;
     }
 
-    .site_title {
+    /* .site_title {
         font-size: large;
         margin-top: 10px;
-    }
+    } */
 }
 
 @media screen and (max-width:690px) {
@@ -78,13 +78,13 @@ h1 {
     .hamburgerbars {
         display: block !important;
     }
-
+    /* 
     .site_title {
-        font-size: 15px;
-    }
+    font-size: 1,5rem;
+    } */
 }
 
-@media screen and (min-width: 650px) {
+/* @media screen and (min-width: 650px) {
     .site_title {
         font-size: 30px;
     }
@@ -101,6 +101,10 @@ h1 {
     .menu {
         display: none !important;
     }
+} */
+
+.hamburgerbars{
+    display: none;
 }
 
 body {
@@ -181,6 +185,7 @@ main,
 }
 
 .site_title {
+    font-size: 1.5rem;
     white-space: nowrap;
 }
 
@@ -209,15 +214,19 @@ label:hover {
     background: #1b203d;
     position: absolute;
     right: 0px;
-    top: 50px;
+    top: 70px;
     border-style: 1px;
     text-align: left;
-    width: 136px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 input[type=checkbox].hamMeny:checked~.menu {
     display: block;
 }
+
+h
 
 .fa-li {
     cursor: pointer;
