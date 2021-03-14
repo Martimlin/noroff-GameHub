@@ -211,7 +211,7 @@ ul {
   
   @media screen and (max-width: 600px) {
    .grid-container img {
-       max-width: 200px !important;
+       max-width: 180px !important;
    }
   }
   
