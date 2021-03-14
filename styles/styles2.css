@@ -91,13 +91,15 @@ body {
 }
 
 .product-container {
-  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  /* align-content: stretch; */
+  justify-content: center;
+  /* width: 100%; */
   max-width: 1200px;
   padding-top: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  flex-wrap: wrap;
-  justify-content: center;
+
+  /* flex-basis: 33%; */
 }
 
 .product-container img:hover {
@@ -105,10 +107,16 @@ body {
 }
 
 .product-container img {
+  display: block;
+  object-fit: cover;
+  width: 20%;
+
+
+  /* set to 'auto' in IE11 to avoid distortions */
   cursor: pointer;
-  flex: 1;
   margin: 10px;
-  max-width: 250px;
+
+
 }
 
 .box {
@@ -151,7 +159,7 @@ label:hover {
   padding: 10px;
 }
 
-#add-to-cart:checked ~ .cart {
+#add-to-cart:checked~.cart {
   display: block;
 }
 
@@ -169,7 +177,7 @@ label:hover {
   font-size: 1.2rem;
 }
 
-input[type="checkbox"].hamMeny:checked ~ .menu {
+input[type="checkbox"].hamMeny:checked~.menu {
   display: block;
 }
 
@@ -203,44 +211,43 @@ ul {
 }
 
 @media screen and (max-width: 1100px) {
-    .navbar {
-      /* columns: 1; */
-      flex-wrap: wrap-reverse;
-    }
+  .navbar {
+    /* columns: 1; */
+    flex-wrap: wrap-reverse;
   }
-  
-  @media screen and (max-width: 600px) {
-   .grid-container img {
-       max-width: 150px !important;
-   }
-  }
-  
+}
 
-  @media screen and (min-width: 690px) and (max-width: 1000px)  {
-    .site_title {
-      font-size: 1.5rem;
-      padding-top: 10px;
-    }
+
+
+@media screen and (min-width: 691px) and (max-width: 1000px) {
+  .site_title {
+    font-size: 1.5rem;
+    padding-top: 10px;
   }
-  
-  @media screen and (max-width: 690px) {
-    .grid-container {
-      max-width: 1200px;
-      display: grid;
-      grid-template-areas:
-        "header header"
-        "navbar navbar"
-        "main main"
-        "footer footer";
-    }
-  
-    .button,
-    .search_container,
-    .sideMenu {
-      display: none !important;
-    }
-  
-    .hamburgerbars {
-      display: block !important;
-    }
+}
+
+@media screen and (max-width: 690px) {
+  .grid-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "navbar navbar"
+      "main main"
+      "footer footer";
   }
+
+  .button,
+  .search_container,
+  .sideMenu {
+    display: none !important;
+  }
+
+  .hamburgerbars {
+    display: block !important;
+  }
+
+  .product-container img {
+    width: 40%;
+  }
+}
