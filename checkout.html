@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="language" content="english" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="author" content="Reichwald" Mkrtchyan” />
+    <meta name="designer" content="Reichwald" Mkrtchyan” />
+    <meta name="publisher" content="Reichwald" Mkrtchyan” />
+
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <title>GameHub - home</title>
+
+    <meta name="description" content="HTML and CSS - Module Assignment 3" />
+    <meta name="keywords" content="learing by doing" />
+    <meta name="robots" content="noindex, nofollow, noarchive, noodp" />
+
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="web" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
+    <link rel="stylesheet" href="/styles/checkout.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="logo"></div>
+      </header>
+
+      <section class="navbar sticky">
+        <div class="box navbar" id="nav">
+          <h1 class="site_title"></h1>
+
+          <div class="btnContainer">
+            <span class="search_container">
+              <input type="text" id="txt_search" class="txt_input" title="Search for products" placeholder="Search..." />
+              <button id="btn_search" class="nav_button" title="commit productsearch"><i class="fas fa-search"></i>Search</button>
+            </span>
+            <button id="btn_login" class="nav_button" title="To the login page"><i class="fas fa-user"></i> Login</button>
+            <button id="btn_contact" class="nav_button" title="To the contact page"><i class="fas fa-envelope"></i> Contact</button>
+            <button id="btn_cart" class="nav_button" title="Open your shoppingcart"><i class="fas fa-shopping-cart"></i> Cart</button>
+          </div>
+
+          <input type="checkbox" id="hamMeny" class="hamMeny" style="display: none" title="Hamburgermeny" />
+
+          <label for="hamMeny" class="hamburgerbars"><i class="fas fa-bars"></i> </label>
+
+          <div class="menu">
+            <hr />
+            <ul class="fa-ul">
+              <li>
+                <span class="fa-li"><i class="fas fa-user"></i></span>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><a href="#">Contact</a>
+              </li>
+              <li>
+                <span class="fa-li"><i class="fas fa-shopping-cart"></i></span><a href="#">Cart</a>
+              </li>
+              <li>
+                <div class="search-container">
+                  <input type="text" class="txt_input" placeholder="Search.." />
+                  <span class="fa-li"><i class="fas fa-search"></i></span><a href="#">Search</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sideMenu box">
+        <nav class="">
+          <ul class="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games_list.html">Games</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <hr />
+            <li><a href="login.html">Login</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <main>
+        <h2>Checkout</h2>
+        <section class="account-container centered">
+          <h4>Please fill in your bank information:</h4>
+          <p>Alternative Payment methods:</p>
+
+          <div class="payments">
+            <i class="fab fa-cc-visa fa-2x active"></i>
+
+            <i class="fab fa-paypal fa-2x"></i>
+            <i class="fab fa-google-pay fa-2x"></i>
+            <i class="fab fa-apple-pay fa-2x"></i>
+          </div>
+
+          <div class="creditcard">
+            <div class="mastercardlogo">
+              <span style="color: white"><i class="fab fa-cc-mastercard fa-2x"></i></span>
+            </div>
+            <div class="noroff_logo"></div>
+            <span class="cc_bankName">Bank</span>
+            <div class="dots">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span> <span class="dot space"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span> <span class="dot space"></span><span class="dot"></span
+              ><span class="dot"></span><span class="dot"></span> <span class="dot space"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+
+            <div class="cc_name">John Doe</div>
+            <div class="cc_exp"></div>
+            <input type="number" name="from1" id="from1" pattern="[1-12]{1}" /> <input type="number" name="from2" id="from2" pattern="[1-99]{1}" />
+          </div>
+
+          <p>Shipping to:</p>
+          <form action="" method="post" class="checkoutform">
+            <div class="formContainer boxCenter">
+              <div class="formBlock">
+                <input type="text" id="txtb_firstname" name="firstname" placeholder="Firstname" class="formstyle form50" title="First Name" />
+                <input type="text" id="txtb_lastname" name="lastname" placeholder="Lastname" class="formstyle form50" title="Last Name" />
+              </div>
+              <div class="formBlock">
+                <input type="text" id="txtb_street" name="Street" placeholder="Street" class="formstyle form75" title="Street" />
+                <input type="text" id="txtb_streetNr" name="StreetNr" placeholder="Nr." class="formstyle form25" title="House Number" />
+                <div class="formBlock">
+                  <input type="text" id="txtb_zip" name="Zip" placeholder="Zip code" class="formstyle form25" title="Zip Code" />
+                  <input type="text" id="txtb_town" name="Town" placeholder="Town" class="formstyle form75" title="Town" />
+                </div>
+              </div>
+              <div class="formBlock">
+                <input type="tel" id="phone" name="phone" placeholder="Telephone" class="formstyle form100" title="Telephon Number" />
+              </div>
+            </div>
+            <p>In the your shopping cart:</p>
+            <table class="">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="">
+                      <img class="" src="/images/assets/GameHub_covers.jpg" alt="product1" title="PingPong" />
+                      <div class="product-info">
+                        <h4>PING PONG</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td>1 pcs</td>
+                  <td>100$</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="">
+                      <img class="" src="/images/assets/GameHub_covers2.jpg" alt="product1" title="PingPong" />
+                      <div class="product-info">
+                        <h4>SUPER DUPER</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td>1 pcs</td>
+                  <td>150$</td>
+                </tr>
+              </tbody>
+
+              <tfoot class="txt_white">
+                <tr>
+                  <td colspan="2" class="total_txt">Total:</td>
+                  <td class="total total_txt">250$</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <a href="success.html"><div id="btn_checkout" class="button green-btn">Order Submit</div></a>
+          </form>
+        </section>
+      </main>
+
+      <footer class="box">Copyright &copy;</footer>
+    </div>
+  </body>
+</html>

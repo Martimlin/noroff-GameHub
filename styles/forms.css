@@ -1,0 +1,118 @@
+.form {
+  display: block;
+  background-color: #fff;
+  border: 1px;
+  border-color: #3890c7;
+
+  box-shadow: 2px 5px 5px white;
+  color: #1b203d;
+  cursor: pointer;
+  width: 100%;
+  min-height: 30px;
+  margin: 5px;
+}
+
+.mandatory {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+table {
+  margin: 0px auto;
+  border: 0px;
+}
+
+.green-btn {
+  padding: 5px 20px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+  background: rgb(13, 66, 13);
+  color: white;
+  border-radius: 5px;
+}
+
+
+.green-btn:hover {
+  color: white;
+  background: rgb(56, 102, 56);
+  font-size: larger;
+}
+
+
+input[type="checkbox"].btn_Login:checked~.modalbox {
+  display: none;
+}
+
+.modal {
+  position: static;
+
+}
+
+.modal::after {
+  content: "😃";
+  font-size: 100px;
+}
+
+#toggle:checked~.modal::after {
+  content: "Welcome - redirekting ...";
+}
+
+
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
+  /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+.formstyle {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 2px 5px 5px #3890c7;
+  color: #1b203d;
+}
+
+
+.form100 {
+  flex: 4;
+  width: 100%;
+}
+
+.form75 {
+  flex: 3;
+  width: 75%;
+}
+
+.form50 {
+  flex: 2;
+  width: 50%;
+}
+
+.form25 {
+  flex: 1;
+  width: 25%;
+}
+
+select{
+  cursor:grab;
+}
+
+.btn-sell,
+.btn-buy {
+  padding: 10px 30px;
+  /* margin: 10px auto !important; */
+  /* width: 120px; */
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-buy {
+  background-color: green;
+}
+
+.btn-sell {
+  background-color: brown;
+}

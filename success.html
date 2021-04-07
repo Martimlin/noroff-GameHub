@@ -23,6 +23,9 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="distribution" content="web" />
 
+    <meta http-equiv="refresh" content="3;url=index.html" />
+
+
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png" />
@@ -33,8 +36,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
 
     <link rel="stylesheet" href="/styles/styles.css" />
-
-    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="/styles/forms.css" />
   </head>
   <body>
     <div class="grid-container">
@@ -44,11 +46,11 @@
 
       <section class="navbar sticky">
         <div class="box navbar" id="nav">
-          <h1 class="site_title">Hottest games of the week</h1>
+          <h1 class="site_title">My Site</h1>
 
           <div class="btnContainer">
             <span class="search_container">
-              <input type="text" id="txt_search" class="txt_input" title="Search for products" placeholder="Search..."/>
+              <input type="text" id="txt_search" class="txt_input" title="Search for products" />
               <button id="btn_search" class="nav_button" title="commit productsearch"><i class="fas fa-search"></i>Search</button>
             </span>
             <button id="btn_login" class="nav_button" title="To the login page"><i class="fas fa-user"></i> Login</button>
@@ -90,7 +92,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="games_list.html">Games</a></li>
             <li><a href="cart.html">Cart</a></li>
-
             <hr />
             <li><a href="login.html">Login</a></li>
             <li><a href="account.html">Account</a></li>
@@ -100,12 +101,9 @@
       </section>
 
       <main>
-        <h2>Welcome - Take a look at hour hottest games of the week</h2>
-        <section class="product-container">
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers.jpg" alt="product1" title="PingPong" /></a>
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers2.jpg" alt="product2" title="SuperDuper" /></a>
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers3.jpg" alt="product3" title="Black" /></a>
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers4.jpg" alt="product4" title="Furious" /></a>
+        <h2 class="btn-buy">We have recied your order</h2>
+        <section class="account-container"><h3>Thank you for your trust...</h3><p>Feel free to buy more stuff.</p>
+        <h6>Click <a href="/index.html">here</a> if you are not getting redicrtedn in 3 seconds...</h6>
         </section>
       </main>
 

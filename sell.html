@@ -33,8 +33,8 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
 
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
 
-    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -44,11 +44,11 @@
 
       <section class="navbar sticky">
         <div class="box navbar" id="nav">
-          <h1 class="site_title">Hottest games of the week</h1>
+          <h1 class="site_title">My Site</h1>
 
           <div class="btnContainer">
             <span class="search_container">
-              <input type="text" id="txt_search" class="txt_input" title="Search for products" placeholder="Search..."/>
+              <input type="text" id="txt_search" class="txt_input" title="Search for products" />
               <button id="btn_search" class="nav_button" title="commit productsearch"><i class="fas fa-search"></i>Search</button>
             </span>
             <button id="btn_login" class="nav_button" title="To the login page"><i class="fas fa-user"></i> Login</button>
@@ -90,7 +90,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="games_list.html">Games</a></li>
             <li><a href="cart.html">Cart</a></li>
-
             <hr />
             <li><a href="login.html">Login</a></li>
             <li><a href="account.html">Account</a></li>
@@ -100,12 +99,21 @@
       </section>
 
       <main>
-        <h2>Welcome - Take a look at hour hottest games of the week</h2>
-        <section class="product-container">
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers.jpg" alt="product1" title="PingPong" /></a>
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers2.jpg" alt="product2" title="SuperDuper" /></a>
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers3.jpg" alt="product3" title="Black" /></a>
-          <a href="/game_page.html"><img src="/images/assets/GameHub_covers4.jpg" alt="product4" title="Furious" /></a>
+        <h2>Sell a game</h2>
+        <section class="content-container">
+          <label for="txt_gameName" style="display: block">Game Title</label>
+          <input type="text" name="GamName" id="txt_gameName" class="formstyle" style="display: block" />
+          <label for="sel_gamecondition" style="display: block">Condition: </label>
+          <select name="condition" id="sel_gamecondition" class="formstyle">
+            <option value="1">New</option>
+            <option value="1">Used</option>
+            <option value="1">Defect</option>
+          </select>
+
+          <label for="num_price" style="display: block">Price: </label>
+          <input type="number" name="Price" id="num_price" class="formstyle" style="display: block" />
+
+          <div class="button btn-sell">Sell</div>
         </section>
       </main>
 

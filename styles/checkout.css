@@ -1,0 +1,200 @@
+.creditcard {
+  position: relative;
+  background-color: #ff341e;
+  height: 160px;
+  width: 250px;
+  border-radius: 15px;
+  margin: 0px auto;
+  color: white;
+}
+
+.noroff_logo {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  background-image: url(../images/noroff-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+}
+
+.cc_bankName {
+  position: absolute;
+  top: 15px;
+  left: 110px;
+  font-size: 22px;
+  color: white;
+}
+
+.mastercardlogo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cc_name {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-size: 22px;
+}
+
+
+#from1,
+#from2,
+.cc_exp::after {
+  position: absolute;
+  top: 120px;
+  width: 35px;
+}
+
+#from1 {
+  left: 130px;
+}
+
+.cc_exp::after {
+  left: 160px;
+  content: " / ";
+  color: white;
+}
+
+#from2 {
+  left: 185px
+}
+
+.dot {
+  margin-left: 4px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+}
+
+.space {
+  margin-left: 10px;
+}
+
+.cc_num1,
+.cc_num2,
+.cc_num3,
+.cc_num4 {
+  margin-left: 10px;
+}
+
+.dots {
+  position: absolute;
+  top: 90px;
+  display: inline-block;
+  left: -15px;
+  width: 100%;
+}
+
+/* .cc_num2 {
+  left: 60px;
+}
+
+.cc_num3 {
+  left: 110px;
+}
+
+.cc_num4 {
+  left: 160px;
+}
+
+*/
+
+.formBlock {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* .formContainer>* {
+  flex: 1 100%;
+} */
+
+.formContainer {
+  max-width: 400px;
+}
+
+.formBlock input,
+.formBlock label {
+  display: block;
+}
+
+.payments {
+  margin: 10px;
+  height: 100%;
+}
+
+.payments>* {
+  margin: 0 5px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+  vertical-align: middle;
+}
+
+.active {
+  border: 4px solid green;
+}
+
+.product-card {
+  height: 150px;
+  /* background-color: gray; */
+}
+
+.product_img {
+  object-fit: cover;
+  height: 100px !important;
+  width: auto !important;
+}
+
+.product-info {
+  height: 10px;
+  color: #1b203d;
+}
+
+table {
+  table-layout: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 40px auto;
+  color: #1b203d;
+  background-color: gray !important;
+}
+
+td {
+  padding: 0 20px;
+}
+
+tr,
+td {
+  border: 1px solid black;
+  padding: 20px 50px;
+}
+
+th {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+  #txtb_firstname,
+  #txtb_lastname {
+    flex: 1 100%;
+  }
+
+  .button {
+    display: block;
+  }
+
+}

@@ -1,0 +1,41 @@
+img {
+  width: 300px;
+}
+
+.content_section {
+  margin-top: 30px;
+  display: flex;
+
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.product-card {
+  flex: 1;
+}
+
+.product-description {
+  width: auto;
+  flex: 2 50%;
+  padding: 5px;
+}
+
+
+
+
+/* @media al
+l and (min-width: 700px) {
+     .product-description { flex: 1 0 ; } 
+  } */
+
+/* @media all and (min-width: 800px) {
+  .content_section {
+    flex: 3 0px;
+  }
+  .product-card {
+    order: 1;
+  }
+  .product-description {
+    order: 2;
+  }
+} */
