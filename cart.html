@@ -23,42 +23,22 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="distribution" content="web" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
 
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
-    ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
 
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/forms.css" />
 
     <link rel="stylesheet" href="/styles/cart.css" />
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -67,90 +47,17 @@
       </header>
 
       <section class="navbar sticky">
-        <div class="box navbar" id="nav">
-          <h1 class="site_title"><span class="pathlink">/ </span> <a href="/games_list.html" class="pathlink">Games </a><span class="pathlink">/ </span>Shopping cart</h1>
-
-          <div class="btnContainer">
-            <span class="search_container">
-              <input
-                type="text"
-                id="txt_search"
-                class="txt_input"
-                title="Search for products"
-              />
-              <button
-                id="btn_search"
-                class="nav_button"
-                title="commit productsearch"
-              >
-                <i class="fas fa-search"></i>Search
-              </button>
-            </span>
-            <button id="btn_login" class="nav_button" title="To the login page">
-              <i class="fas fa-user"></i> Login
-            </button>
-            <button id="btn_contact" class="nav_button" title="To the contact page">
-              <i class="fas fa-envelope"></i> Contact
-            </button>
-            <button id="btn_cart" class="nav_button" title="Open your shoppingcart">
-              <i class="fas fa-shopping-cart"></i> Cart
-            </button>
-          </div>
-
-          <input
-            type="checkbox"
-            id="hamMeny"
-            class="hamMeny"
-            style="display: none"
-            title="Hamburgermeny"
-          />
-
-          <label for="hamMeny" class="hamburgerbars"
-            ><i class="fas fa-bars"></i>
-          </label>
-
-          <div class="menu">
-            <hr />
-            <ul class="fa-ul">
-              <li>
-                <span class="fa-li"><i class="fas fa-user"></i></span>
-                <a href="#">Login</a>
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-envelope"></i></span
-                ><a href="#">Contact</a>
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-shopping-cart"></i></span
-                ><a href="#">Cart</a>
-              </li>
-              <li>
-                <div class="search-container">
-                  <input type="text" class="txt_input" placeholder="Search.." />
-                  <span class="fa-li"><i class="fas fa-search"></i></span
-                  ><a href="#">Search</a>
-                </div>
-              </li>
-            </ul>
+        <div class="box" id="nav">
+          <h1 class="site_title"><a href="index.html">Home</a> > Shopping Cart</h1>
+          <div id="coss_navbar">
+            <!-- loads with jquery url=cross_elements/nav.html -->
           </div>
         </div>
       </section>
 
       <section class="sideMenu box">
-        <nav class="">
-          <ul class="menuList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games_list.html">Games</a></li>
-            <li><a href="cart.html">Cart</a></li>
-
-            <hr />
-            <li><a href="login.html">Login</a></li>
-            <li><a href="account.html">Account</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <!-- loads with jquery url=cross_elements/sideMenu.html -->
       </section>
-
       <main>
         <section class="product-in-cart content_section">
           <table>
@@ -165,12 +72,7 @@
               <tr>
                 <td>
                   <div class="product-card">
-                    <img
-                      class="product_img"
-                      src="/images/assets/GameHub_covers.jpg"
-                      alt="product1"
-                      title="PingPong"
-                    />
+                    <img class="product_img" src="/images/assets/GameHub_covers.jpg" alt="product1" title="PingPong" />
                     <div class="product-info">
                       <h4>PING PONG</h4>
                       <h5>100$</h5>
@@ -178,22 +80,12 @@
                   </div>
                 </td>
                 <td>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  sed fugiat blanditiis, modi eius quibusdam nostrum, magni quam
-                  voluptate odit labore? Minus quis animi rem architecto
-                  voluptas nulla est deleniti!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed fugiat blanditiis, modi eius quibusdam nostrum, magni quam voluptate odit labore? Minus quis animi rem architecto voluptas nulla est deleniti!
                   <p>
                     <span class="select">
                       <button class="nav_button">-</button>
-                      <input
-                        type="text"
-                        name="count"
-                        id="count"
-                        value="1"
-                        class="txt_input"
-                      />
+                      <input type="text" name="count" id="count" value="1" class="txt_input" />
                       <button class="nav_button">+</button>
-
                       <i class="fas fa-trash-alt butt"></i>
                     </span>
                   </p>
@@ -203,12 +95,7 @@
               <tr>
                 <td>
                   <div class="product-card">
-                    <img
-                      class="product_img"
-                      src="/images/assets/GameHub_covers2.jpg"
-                      alt="product1"
-                      title="PingPong"
-                    />
+                    <img class="product_img" src="/images/assets/GameHub_covers2.jpg" alt="product1" title="PingPong" />
                     <div class="product-info">
                       <h4>SUPER DUPER</h4>
                       <h5>150$</h5>
@@ -216,22 +103,12 @@
                   </div>
                 </td>
                 <td>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  sed fugiat blanditiis, modi eius quibusdam nostrum, magni quam
-                  voluptate odit labore? Minus quis animi rem architecto
-                  voluptas nulla est deleniti!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sed fugiat blanditiis, modi eius quibusdam nostrum, magni quam voluptate odit labore? Minus quis animi rem architecto voluptas nulla est deleniti!
                   <p>
                     <span class="select">
                       <button class="nav_button">-</button>
-                      <input
-                        type="text"
-                        name="count"
-                        id="count"
-                        value="1"
-                        class="txt_input"
-                      />
+                      <input type="text" name="count" id="count" value="1" class="txt_input" />
                       <button class="nav_button">+</button>
-
                       <i class="fas fa-trash-alt butt"></i>
                     </span>
                   </p>
@@ -248,11 +125,11 @@
               <tr>
                 <td>
                   <a href="clear all">Delte All</a>
-               
-                  <td colspan="2" class="checkout"><a href="checkout.html" class="btn-buy">Check Out</a> 
-                  </td>
                 </td>
-           
+
+                <td colspan="2" class="checkout">
+                  <a href="checkout.html" class="btn-buy">Check Out</a>
+                </td>
               </tr>
             </tfoot>
           </table>

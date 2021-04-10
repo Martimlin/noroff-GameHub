@@ -18,7 +18,7 @@ header {
 
 main {
   grid-area: main;
-  padding-bottom: 20px;
+  padding: 20px 20px;
   color: #1b203d;
   margin: 0 auto;
 }
@@ -56,18 +56,18 @@ footer {
   margin: 0px;
 }
 
-main h2 {
+main h2, h3 {
   font-family: sfnewrepublic, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  color: #1b203d;
-  padding: 10px;
+  /* color: #1b203d;
+  padding: 10px; */
 }
 
 .navbar {
   position: -webkit-sticky;
   position: sticky !important;
   grid-area: navbar;
-  align-items: center;
+  align-items: right !important;
   top: 0;
   z-index: 999;
 }
@@ -111,11 +111,6 @@ body {
   cursor: pointer;
   padding: 5px;
   margin: 10px;
-}
-
-.box {
-  padding: 20px;
-  /* margin-left: 10px; */
 }
 
 .product-container {
@@ -168,7 +163,7 @@ img {
 }
 
 .site_title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
@@ -289,13 +284,19 @@ button a{
 }
 
 @media screen and (min-width: 691px) and (max-width: 1000px) {
-  .site_title {
+  /* .site_title {
     font-size: 1.5rem;
     padding-top: 10px;
-  }
+  } */
   .main{
     min-width: 600px;
+    margin: auto 0;
   }
+}
+
+@media screen and (min-width: 850px) {
+  .navbar{min-width: 700px;}
+
 }
 
 @media screen and (max-width: 690px) {
