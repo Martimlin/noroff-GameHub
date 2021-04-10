@@ -1,3 +1,7 @@
+:root {
+  --theme-color: #1b203d;
+}
+
 @font-face {
   font-family: sfnewrepublic;
   src: url("/fonts/sfoldrepublicsc-italic.ttf");
@@ -19,7 +23,7 @@ header {
 main {
   grid-area: main;
   padding: 20px 20px;
-  color: #1b203d;
+  color: var(--theme-color);
   margin: 0 auto;
 }
 
@@ -56,10 +60,11 @@ footer {
   margin: 0px;
 }
 
-main h2, h3 {
+main h2,
+h3 {
   font-family: sfnewrepublic, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  /* color: #1b203d;
+  /* color: var(--theme-color);
   padding: 10px; */
 }
 
@@ -98,7 +103,7 @@ body {
   background-color: #fff;
   border: none;
   box-shadow: 2px 5px 5px #3890c7;
-  color: #1b203d;
+  color: var(--theme-color);
   cursor: pointer;
   height: 30px;
 }
@@ -107,7 +112,7 @@ body {
   background-color: #fff;
   border: none;
   box-shadow: 2px 5px 5px #3890c7;
-  color: #1b203d;
+  color: var(--theme-color);
   cursor: pointer;
   padding: 5px;
   margin: 10px;
@@ -147,7 +152,7 @@ img {
 .box {
   width: auto;
   position: relative;
-  background-color: #1b203d;
+  background-color: var(--theme-color);
   box-shadow: 2px 10px 5px #ffffff;
   color: #fff;
   display: flex;
@@ -214,7 +219,7 @@ ul {
 
 .menu {
   display: none;
-  background: #1b203d;
+  background: var(--theme-color);
   position: absolute;
   right: 0px;
   top: 65px;
@@ -228,14 +233,15 @@ ul {
   margin: 10px;
 }
 
-.product-card {
-  background-color: #1b203d;
-}
+/* .product-card {
+  background-color: var(--theme-color);
+} */
 
 .product-info {
   text-align: center;
   color: white;
-  padding-bottom: 5px;
+  padding: 5px;
+  background-color: var(--theme-color);
 }
 
 .product-info h4,
@@ -245,7 +251,7 @@ h5 {
 
 .procut-description p {
   margin: 30px;
-  color: #1b203d;
+  color: var(--theme-color);
 }
 
 .centered {
@@ -257,7 +263,7 @@ h5 {
 }
 
 label {
-  color: #1b203d;
+  color: var(--theme-color);
 }
 
 form {
@@ -269,15 +275,29 @@ form {
   display: block;
 }
 
-.pathlink{
+.pathlink {
   text-decoration: none;
   font-size: 20px;
 }
 
-button a{
+button a {
   text-decoration: none !important;
 }
 
+.link {
+  color: #1b203d;
+}
+
+#btn_cart::after {
+  top: 15px;
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  line-height: 10px;
+  color: white;
+  border-radius: 50%;
+  content: "2";
+}
 @media screen and (max-width: 1100px) {
   .navbar {
     flex-wrap: wrap-reverse;
@@ -289,17 +309,19 @@ button a{
     font-size: 1.5rem;
     padding-top: 10px;
   } */
-  .main{
+  .main {
     min-width: 691px;
     margin: auto 0;
   }
 }
 
 @media screen and (min-width: 850px) {
-  .navbar{min-width: 700px;}
+  .navbar {
+    min-width: 700px;
+  }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 850px) {
   .grid-container {
     padding: 0px;
     display: grid;
@@ -331,11 +353,12 @@ button a{
   }
 
   .product-container {
-    gap: 5px ;
+    gap: 5px;
   }
 
-  .box, a {
-margin: 0px;
+  .box,
+  a {
+    margin: 0px;
   }
 }
 @media screen and (max-width: 400px) {

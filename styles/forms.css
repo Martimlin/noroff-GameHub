@@ -9,7 +9,7 @@
   cursor: pointer;
   width: 100%;
   min-height: 30px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .mandatory {
@@ -22,31 +22,41 @@ table {
   border: 0px;
 }
 
-.green-btn {
-  padding: 5px 20px;
+td {
+  padding: 10px;
+}
+
+.btn {
+  /* padding: 5px 20px; */
+  padding: 0.3em;
   display: inline-block;
   vertical-align: top;
   line-height: 30px;
-  background: rgb(13, 66, 13);
-  color: white;
   border-radius: 5px;
+  min-width: 100px;
 }
 
-
-.green-btn:hover {
+.green-btn {
+  background: rgb(29, 143, 29);
   color: white;
-  background: rgb(56, 102, 56);
+} 
+
+.red-btn {
+  background: rgb(139, 64, 2);
+  color: white;
+}
+
+.hover:hover{
+  color: white;
   font-size: larger;
 }
 
-
-input[type="checkbox"].btn_Login:checked~.modalbox {
+input[type="checkbox"].btn_Login:checked ~ .modalbox {
   display: none;
 }
 
 .modal {
   position: static;
-
 }
 
 .modal::after {
@@ -54,10 +64,9 @@ input[type="checkbox"].btn_Login:checked~.modalbox {
   font-size: 100px;
 }
 
-#toggle:checked~.modal::after {
+#toggle:checked ~ .modal::after {
   content: "Welcome - redirekting ...";
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -73,7 +82,6 @@ input[type="checkbox"].btn_Login:checked~.modalbox {
   box-shadow: 2px 5px 5px #3890c7;
   color: #1b203d;
 }
-
 
 .form100 {
   flex: 4;
@@ -95,24 +103,6 @@ input[type="checkbox"].btn_Login:checked~.modalbox {
   width: 25%;
 }
 
-select{
-  cursor:grab;
-}
-
-.btn-sell,
-.btn-buy {
-  padding: 5px;
-  /* margin: 10px auto !important; */
-  /* width: 120px; */
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.btn-buy {
-  background-color: green;
-}
-
-.btn-sell {
-  background-color: brown;
+select {
+  cursor: grab;
 }
