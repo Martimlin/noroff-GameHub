@@ -114,12 +114,13 @@ body {
 }
 
 .product-container {
-  margin: o auto;
-  display: flex;
+  margin: 0 auto;
+  display: inline-flex;
   flex-flow: wrap;
   justify-content: center;
   max-width: 1200px;
   padding-top: 10px;
+  gap: 10px;
 }
 
 .product-container img:hover {
@@ -130,7 +131,7 @@ body {
   display: block;
   /* width: 20%; */
   cursor: pointer;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .content-container {
@@ -289,19 +290,18 @@ button a{
     padding-top: 10px;
   } */
   .main{
-    min-width: 600px;
+    min-width: 691px;
     margin: auto 0;
   }
 }
 
 @media screen and (min-width: 850px) {
   .navbar{min-width: 700px;}
-
 }
 
 @media screen and (max-width: 690px) {
   .grid-container {
-    max-width: 1200px;
+    padding: 0px;
     display: grid;
     grid-template-areas:
       "header header"
@@ -320,10 +320,26 @@ button a{
     display: block !important;
   }
 
-  .product-container img {
+  /* .product-container img {
     flex:1 50%;
   }
   .product-container {
     padding: 0px;
+  } */
+  main {
+    padding: 0;
+  }
+
+  .product-container {
+    gap: 5px ;
+  }
+
+  .box, a {
+margin: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  img {
+    width: 100%;
   }
 }
