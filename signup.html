@@ -14,7 +14,7 @@
 
     <meta http-equiv="Content-Style-Type" content="text/css" />
 
-    <title>GameHub - home</title>
+    <title>GameHub - SignUp</title>
 
     <meta name="description" content="HTML and CSS - Module Assignment 3" />
     <meta name="keywords" content="learing by doing" />
@@ -23,39 +23,25 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="distribution" content="web" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="/images/favicon_io/site.webmanifest" />
 
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"
-    ></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
 
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
+
+    <script src="/js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+<style>
+
+</style>
+
   </head>
   <body>
     <div class="grid-container">
@@ -64,157 +50,43 @@
       </header>
 
       <section class="navbar sticky">
-        <div class="box navbar" id="nav">
-          <h1 class="site_title">List of all games</h1>
-
-          <div class="btnContainer">
-            <span class="search_container">
-              <input
-                type="text"
-                id="txt_search"
-                class="txt_input"
-                title="Search for products"
-              />
-              <button
-                id="btn_search"
-                class="button"
-                title="commit productsearch"
-              >
-                <i class="fas fa-search"></i>Search
-              </button>
-            </span>
-            <button id="btn_login" class="button" title="To the login page">
-              <i class="fas fa-user"></i> Login
-            </button>
-            <button id="btn_contact" class="button" title="To the contact page">
-              <i class="fas fa-envelope"></i> Contact
-            </button>
-            <button id="btn_cart" class="button" title="Open your shoppingcart">
-              <i class="fas fa-shopping-cart"></i> Cart
-            </button>
-          </div>
-
-          <input
-            type="checkbox"
-            id="hamMeny"
-            class="hamMeny"
-            style="display: none"
-            title="Hamburgermeny"
-          />
-
-          <label for="hamMeny" class="hamburgerbars"
-            ><i class="fas fa-bars"></i>
-          </label>
-
-          <div class="menu">
-            <hr />
-            <ul class="fa-ul">
-              <li>
-                <span class="fa-li"><i class="fas fa-user"></i></span>
-                <a href="#">Login</a>
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-envelope"></i></span
-                ><a href="#">Contact</a>
-              </li>
-              <li>
-                <span class="fa-li"><i class="fas fa-shopping-cart"></i></span
-                ><a href="#">Cart</a>
-              </li>
-              <li>
-                <div class="search-container">
-                  <input type="text" class="txt_input" placeholder="Search.." />
-                  <span class="fa-li"><i class="fas fa-search"></i></span
-                  ><a href="#">Search</a>
-                </div>
-              </li>
-            </ul>
+        <div class="box" id="nav">
+          <h1 class="site_title"><a href="index.html">Home</a> > SignUp</h1>
+          <div id="coss_navbar">
+            <!-- loads with jquery url=cross_elements/nav.html -->
           </div>
         </div>
       </section>
 
       <section class="sideMenu box">
-        <nav class="">
-          <ul class="menuList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games_list.html">Games</a></li>
-            <li><a href="cart.html">Cart</a></li>
-
-            <hr />
-            <li><a href="login.html">Login</a></li>
-            <li><a href="account.html">Account</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <!-- loads with jquery url=cross_elements/sideMenu.html -->
       </section>
 
       <main>
-        <h2>Welcome - Take a look at hour hottest games of the week</h2>
-        <div style="text-align: center">
-          <span class="search_container">
-            <input
-              type="text"
-              id="txt_search"
-              class="txt_input"
-              title="Search for products"
-            />
-            <button id="btn_search" class="button" title="commit productsearch">
-              <i class="fas fa-search"></i>Search
-            </button>
-          </span>
-        </div>
-
-        <section class="product-container">
-          <img
-            src="/images/assets/GameHub_covers.jpg"
-            alt="product1"
-            title="PingPong"
-          />
-          <img
-            src="/images/assets/GameHub_covers2.jpg"
-            alt="product2"
-            title="SuperDuper"
-          />
-          <img
-            src="/images/assets/GameHub_covers3.jpg"
-            alt="product3"
-            title="Black"
-          />
-          <img
-            src="/images/assets/GameHub_covers4.jpg"
-            alt="product4"
-            title="Furious"
-          />
-          <img
-            src="/images/assets/GameHub_covers5.jpg"
-            alt="product5"
-            title="Assassin"
-          />
-          <img
-            src="/images/assets/GameHub_covers6.jpg"
-            alt="product6"
-            title="Boxer"
-          />
-          <img
-            src="/images/assets/GameHub_covers7.jpg"
-            alt="product7"
-            title="Racing"
-          />
-          <img
-            src="/images/assets/GameHub_covers8.jpg"
-            alt="product8"
-            title="Boxer"
-          />
-          <img
-            src="/images/assets/GameHub_covers9.jpg"
-            alt="product9"
-            title="Cyberpunk"
-          />
-          <img
-            src="/images/assets/GameHub_covers10.jpg"
-            alt="product10"
-            title="Forge Legend"
-          />
+        <h1>Sign Up</h1>
+        <p>Please fill out the form to get access to the sales plattform</p>
+           <section class="signup-container">
+          <form action="" method="post" class="formBlock">
+            <div class="formContainer boxCenter">
+              <div class="formBlock">
+                <input type="text" id="txtb_firstname" name="firstname" placeholder="Firstname" class="formstyle form50" title="First Name" />
+                <input type="text" id="txtb_lastname" name="lastname" placeholder="Lastname" class="formstyle form50" title="Last Name" />
+              </div>
+              <div class="formBlock">
+                <input type="text" id="txtb_street" name="Street" placeholder="Street" class="formstyle form75" title="Street" />
+                <input type="text" id="txtb_streetNr" name="StreetNr" placeholder="Nr." class="formstyle form25" title="House Number" />
+                <div class="formBlock">
+                  <input type="text" id="txtb_zip" name="Zip" placeholder="Zip code" class="formstyle form25" title="Zip Code" />
+                  <input type="text" id="txtb_town" name="Town" placeholder="Town" class="formstyle form75" title="Town" />
+                </div>
+              </div>
+              <div class="formBlock">
+                <input type="tel" id="phone" name="phone" placeholder="Telephone" class="formstyle form100" title="Telephon Number" />
+              </div>
+            
+            <a href="#"><div id="btn_signup" class="btn green-btn">Order Submit</div></a>
+          </div>
+        </form>
         </section>
       </main>
 

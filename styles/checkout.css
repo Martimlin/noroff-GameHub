@@ -108,21 +108,12 @@
 
 */
 
-.formBlock {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
 
 /* .formContainer>* {
   flex: 1 100%;
 } */
 
-.formContainer {
-  max-width: 400px;
-}
+
 
 .formBlock input,
 .formBlock label {
@@ -158,10 +149,10 @@
   width: auto !important;
 }
 
-.product-info {
+/* .product-info {
   height: 10px;
   color: #1b203d;
-}
+} */
 
 table {
   table-layout: auto;

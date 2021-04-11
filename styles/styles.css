@@ -242,6 +242,7 @@ ul {
   color: white;
   padding: 5px;
   background-color: var(--theme-color);
+height: auto;
 }
 
 .product-info h4,

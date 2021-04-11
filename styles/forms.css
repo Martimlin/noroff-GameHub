@@ -3,13 +3,11 @@
   background-color: #fff;
   border: 1px;
   border-color: #3890c7;
-
   box-shadow: 2px 5px 5px white;
   color: #1b203d;
   cursor: pointer;
   width: 100%;
   min-height: 30px;
-  /* margin: 5px; */
 }
 
 .mandatory {
@@ -81,6 +79,19 @@ input[type="checkbox"].btn_Login:checked ~ .modalbox {
   border: none;
   box-shadow: 2px 5px 5px #3890c7;
   color: #1b203d;
+}
+
+.formBlock {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.formContainer {
+  max-width: 400px;
 }
 
 .form100 {
