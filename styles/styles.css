@@ -181,7 +181,7 @@ hr {
   padding-bottom: 10px;
 }
 
-input[type="checkbox"].hamMeny:checked ~ .menu {
+input[type="checkbox"].hamMeny:checked~.menu {
   display: block;
 }
 
@@ -242,7 +242,7 @@ ul {
   color: white;
   padding: 5px;
   background-color: var(--theme-color);
-height: auto;
+  height: auto;
 }
 
 .product-info h4,
@@ -299,13 +299,22 @@ button a {
   border-radius: 50%;
   content: "2";
 }
+
+.top-line {
+  border-top: #fff 1px solid;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
 @media screen and (max-width: 1100px) {
   .navbar {
     flex-wrap: wrap-reverse;
+    margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 691px) and (max-width: 1000px) {
+
   /* .site_title {
     font-size: 1.5rem;
     padding-top: 10px;
@@ -362,6 +371,7 @@ button a {
     margin: 0px;
   }
 }
+
 @media screen and (max-width: 400px) {
   img {
     width: 100%;
