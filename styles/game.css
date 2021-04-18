@@ -1,0 +1,13 @@
+.content_section {
+  margin-top: 30px;
+  display: flex;
+
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.product-description {
+  width: auto;
+  flex: 2 50%;
+  padding: 5px;
+}

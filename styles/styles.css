@@ -1,0 +1,398 @@
+:root {
+  --theme-color: #1b203d;
+  --shadow-color: #3890c7;
+}
+
+@font-face {
+  font-family: sfnewrepublic;
+  src: url("/fonts/sfoldrepublicsc-italic.ttf");
+}
+
+header {
+  grid-area: header;
+}
+
+.logo {
+  background-image: url(../images/GameHub_Logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  margin: 10px;
+}
+
+main {
+  grid-area: main;
+  padding: 20px 20px;
+  color: var(--theme-color);
+  margin: 0 auto;
+}
+
+.sideMenu {
+  top: 100px;
+  grid-area: sidemenu;
+  vertical-align: text-top;
+  text-align: left;
+  top: 0px;
+  z-index: 999;
+  max-width: 100px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  grid-area: footer;
+}
+
+.grid-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "header header"
+    "sidemenu navbar"
+    "sidemenu main"
+    "sidemenu footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.navbar h1 {
+  margin: 0px;
+}
+
+main h2,
+h3 {
+  font-family: sfnewrepublic, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  /* color: var(--theme-color);
+  padding: 10px; */
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky !important;
+  grid-area: navbar;
+  align-items: right !important;
+  top: 0;
+  z-index: 999;
+}
+
+.hamburgerbars {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btnContainer {
+  display: inline;
+  flex-direction: row;
+  float: right;
+  font-size: 18px;
+  text-align: right;
+  text-align: right;
+  white-space: nowrap;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.txt_input,
+.nav_button {
+  background-color: #fff;
+  border: none;
+  box-shadow: 2px 5px 5px var(--shadow-color);
+  color: var(--theme-color);
+  cursor: pointer;
+  height: 30px;
+}
+
+.nav_button {
+  box-shadow: 2px 5px 5px var(--shadow-color);
+}
+
+.button {
+  background-color: #fff;
+  border: none;
+  box-shadow: 2px 5px 5px var(--shadow-color);
+  color: var(--theme-color);
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+}
+
+.product-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.product-container img:hover {
+  transform: scale(1.1);
+}
+
+.product-container a {
+  display: block;
+  /* width: 20%; */
+  cursor: pointer;
+  /* margin: 10px; */
+}
+
+.content-container {
+  margin: 0, auto;
+  /* width: 50%; */
+}
+
+img {
+  object-fit: cover;
+  width: 170px;
+}
+
+.box {
+  width: auto;
+  position: relative;
+  background-color: var(--theme-color);
+  box-shadow: 2px 10px 10px #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.txt_input {
+  cursor: text;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menuList {
+  justify-content: baseline;
+}
+
+.site_title {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+hr {
+  color: #fff;
+}
+
+.menu li {
+  padding-bottom: 10px;
+}
+
+input[type="checkbox"].hamMeny:checked~.menu {
+  display: block;
+}
+
+input[type="checkbox"].hamMeny:checked~.hamburgerbars {
+  transform: rotate(90deg);
+  transition-duration: 0.5s;
+  color: var(--shadow-color);
+}
+
+input[type="checkbox"].hamMeny:not(checked)~.hamburgerbars {
+  transform: rotate(0deg);
+  transition-duration: 0.5s;
+  color: var(white);
+}
+
+a {
+  color: #fff;
+}
+
+a:hover,
+.nav_button:hover,
+.search_container:hover {
+  color: var(--shadow-color);
+}
+
+#txt_search {
+  margin-left: 20px;
+  width: 60px;
+  transition-duration: 0.5s;
+}
+
+#txt_search:hover,
+#txt_search:focus {
+  width: 120px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky !important;
+}
+
+.menu {
+  display: none;
+  background: var(--theme-color);
+  position: absolute;
+  right: 0px;
+  top: 55px;
+  border-radius: 10px;
+  text-align: left;
+  width: 10em;
+  font-size: 1.2rem;
+  padding: 20px 5px;
+
+}
+
+.content_section {
+  margin: 10px;
+}
+
+/* .product-card {
+  background-color: var(--theme-color);
+} */
+
+.product-info {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  background-color: var(--theme-color);
+  height: auto;
+}
+
+.product-info h4,
+h5 {
+  margin: 5px;
+}
+
+.procut-description p {
+  margin: 30px;
+  color: var(--theme-color);
+}
+
+.centered {
+  text-align: center;
+}
+
+.boxCenter {
+  margin: 0px auto;
+}
+
+label {
+  color: var(--theme-color);
+}
+
+.inputGroup {
+  display: block;
+}
+
+.pathlink {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+button a {
+  text-decoration: none !important;
+}
+
+.link {
+  color: #1b203d;
+}
+
+#btn_cart::after {
+  top: 15px;
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  line-height: 10px;
+  color: white;
+  border-radius: 50%;
+  content: "2";
+}
+
+/* @LastFeedback instead of an <hr> element inside an <ul>*/
+.top-line {
+  border-top: #fff 1px solid;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+/* @media screen and (max-width: 1100px) {
+  .navbar {
+    flex-wrap: wrap-reverse;
+  }
+} */
+
+/* @media screen and (min-width: 691px) and (max-width: 1000px) {
+  .main {
+    min-width: 691px;
+    margin: auto 0;
+  }
+} */
+
+@media screen and (min-width: 1100px) {
+  .navbar {
+    min-width: 900px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .navbar {
+    min-width: 700px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .grid-container {
+    padding: 10px;
+    margin: 5px;
+    display: block;
+  }
+
+  .box .nav_button,
+  .search_container,
+  .sideMenu {
+    display: none !important;
+  }
+
+  .hamburgerbars {
+    display: block !important;
+  }
+
+  .account-container {
+    text-align: center;
+  }
+
+  form {
+    padding-top: 20px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .product-container {
+    padding: 25px 10px;
+  }
+
+  .box,
+  a {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    width: 100%;
+  }
+}

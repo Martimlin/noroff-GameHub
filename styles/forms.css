@@ -1,0 +1,100 @@
+.form {
+  display: table;
+  background-color: var(--theme-color);
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px white;
+  cursor: pointer;
+  /* width: 100%; */
+  min-height: 30px;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  margin: 3px auto;
+}
+
+.mandatory {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+table {
+  margin: 0px auto;
+  border: 0px;
+}
+
+.btn {
+  text-align: center;
+  padding: 0.3em;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+  border-radius: 5px;
+  min-width: 100px;
+  margin: 5px;
+}
+
+.green-btn {
+  background: rgb(29, 143, 29);
+  color: white;
+}
+
+.red-btn {
+  background: rgb(139, 64, 2);
+  color: white;
+}
+
+.hover:hover {
+  color: white;
+  font-size: larger;
+}
+
+.formstyle {
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 2px 5px 5px #3890c7;
+  color: #1b203d;
+}
+
+.formBlock {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+}
+
+.formContainer {
+  max-width: 400px;
+}
+
+.form100 {
+  flex: 4;
+  width: 100%;
+}
+
+.form75 {
+  flex: 3;
+  width: 75%;
+}
+
+.form50 {
+  flex: 2;
+  width: 50%;
+}
+
+.form25 {
+  flex: 1;
+  width: 25%;
+}
+
+input {
+  background-color: #1b203d;
+}
+
+select {
+  cursor: grab;
+}

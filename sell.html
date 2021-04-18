@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="language" content="english" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="author" content="Reichwald" Mkrtchyan” />
+    <meta name="designer" content="Reichwald" Mkrtchyan” />
+    <meta name="publisher" content="Reichwald" Mkrtchyan” />
+
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <title>GameHub - Sell</title>
+
+    <meta name="description" content="HTML and CSS - Module Assignment 3" />
+    <meta name="keywords" content="learing by doing" />
+    <meta name="robots" content="noindex, nofollow, noarchive, noodp" />
+
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="web" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/brands.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/forms.css" />
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="logo"></div>
+      </header>
+
+      <section class="navbar sticky">
+        <div class="box" id="nav">
+          <h1 class="site_title"><a href="index.html">Home</a> > Sell</h1>
+          <div id="coss_navbar">
+            <!-- loads with jquery url=cross_elements/nav.html -->
+          </div>
+        </div>
+      </section>
+
+      <section class="sideMenu box">
+        <!-- loads with jquery url=cross_elements/sideMenu.html -->
+      </section>
+
+      <main>
+        <h2>Sell a game</h2>
+
+        <div class="centered">
+          <form class="">
+            <label for="txt_gameName">Game Title</label>
+            <input type="text" name="GamName" id="txt_gameName" class="form" />
+            <label for="sel_gamecondition">Condition: </label>
+            <select name="condition" id="sel_gamecondition" class="form">
+              <option value="1">New</option>
+              <option value="1">Used</option>
+              <option value="1">Defect</option>
+            </select>
+            <label for="num_price">Price: </label>
+            <input type="number" name="Price" id="num_price" class="form" />
+            <a href="success.html" class="btn red-btn">Sell</a>
+          </form>
+        </div>
+      </main>
+
+      <footer class="box">Copyright &copy;</footer>
+    </div>
+  </body>
+</html>
